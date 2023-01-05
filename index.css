@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+#boxes {
+    box-sizing: border-box;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+
+
+.box {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    width: 240px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0 8px 8px 8px;
+}
+
+.box-title {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+
+}
+
+.box-content {
+    font-size: 13px;
+}
+
+th {
+
+    font-size: 10px;
+    text-align: left;
+
+}
+
+td {
+    font-size: 12px;
+}
+
+.box-status {
+    color: white;
+
+    border-radius: 4px;
+    padding: 2px;
+    font-weight: 600;
+}
+
+/* ============== HOLD ======================== */
+.hold {
+    background-color: #ffe4e7;
+}
+
+.hold .box-title .box-status {
+    background-color: #ed4a66;
+}
+
+.hold .box-table th {
+    color: #f38396;
+}
+
+
+/* ================ COMPLETED ============================ */
+
+.completed {
+    background-color: #daffeb;
+}
+
+.completed .box-title .box-status {
+    background-color: #27ae60;
+}
+
+.completed .box-table th {
+    color: #50bf7f;
+}
+
+
+/* =================== WIP ============================= */
+.wip {
+
+    background-color: #ffedcb;
+}
+
+.wip .box-title .box-status {
+    background-color: #f2994b;
+}
+
+.wip .box-table th {
+    color: #f7be83;
+}
+
+/* =================== OPEN ============================= */
+.open {
+
+    background-color: #e4e9ff;
+}
+
+.open .box-title .box-status {
+    background-color: #2f80ed;
+}
+
+.open .box-table th {
+    color: #649ff2;
+}
